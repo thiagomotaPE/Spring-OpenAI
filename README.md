@@ -54,6 +54,10 @@ A aplicação estará disponível em `http://localhost:8080`.
 
 Envia uma mensagem e recebe uma resposta da IA.
 
+### `GET http://localhost:8080/swagger-ui/index.html#/`
+
+Teste o projeto com swagger.
+
 ---
 
 ## 📚 Referências
