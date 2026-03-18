@@ -11,6 +11,7 @@ Aplicação de estudo desenvolvida para explorar a integração do **Spring AI**
 - **Spring AI**
 - **OpenAI API** (GPT)
 - **Maven**
+- **Swagger**
 
 ---
 
