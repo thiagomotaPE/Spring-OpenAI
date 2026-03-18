@@ -1,0 +1,41 @@
+openapi: 3.0.4
+info:
+  title: teste swagger apt
+  description: arquivo de config teste para documentar apis com swagger
+  version: v1
+
+servers:
+#forma de fazer com variaveis e parametros
+  - url: '{protocol}://{customerId}:{port}/api'
+    variables:
+      protocol:
+        enum:
+          - http
+          - https
+        default: https
+      customerId:
+        default: localhost
+        description: servidor de produção
+      port:
+        enum:
+          - '8080'
+          - '8081'
+        default: '8080'
+#forma de fazer chumbado
+  - url: http//:localhost:8081/api-teste
+    description: servidor de testes
+
+paths:
+  /users:
+    get:
+      sumary: Retorna uma lista de usuarios
+      description: descrição adicional
+      responses:
+        "200":
+          description: retornou um json com usuarios
+          content:
+            aplication/json:
+              schema:
+                type: array
+                items:
+                  type: string
